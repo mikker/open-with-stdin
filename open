@@ -1,4 +1,6 @@
 #!/bin/sh
+# Put a dash at the end of open to use stdin as arguments
+# usage: echo "TextEdit" | open -a -
 for last; do true; done
 if [ "$last" == '-' ]; then
   arg=`cat`
