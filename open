@@ -1,7 +1,9 @@
 #!/bin/sh
-if [ $# -gt 0 ]; then
-  arg=$@
-else
+for last; do true; done
+if [ "$last" == '-' ]; then
   arg=`cat`
+  cmd=`echo $@ | sed -e "s/-$/${arg}/"`
+  /usr/bin/open $cmd
+else
+  /usr/bin/open $@
 fi
-open "$arg"
