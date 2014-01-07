@@ -1,0 +1,8 @@
+The problem:
+OS X's open command doesn't accept piping of arguments
+
+Solution:
+This version accepts a dash (-) as the last parameter to use stdin as the argument for the original open command.
+
+Installation:
+Put this in your PATH and smoke it (chmod +x)
