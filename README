@@ -6,3 +6,6 @@ This version accepts a dash (-) as the last parameter to use stdin as the argume
 
 Installation:
 Put this in your PATH and smoke it (chmod +x)
+
+Example:
+$ echo "TextEdit" | open -a -
